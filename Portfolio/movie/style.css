@@ -1,0 +1,410 @@
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #444;
+}
+
+header {
+    width: 100%;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, #ff0844 0%, #ef5a2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    padding-left: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #ef5a2c;
+    transition: 0.3s ease;
+}
+
+.btn-sign-up{
+    padding: 12px 17px;
+    background-color: #ef5a2c;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hamburger {
+    padding-right: 24px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    display: none;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+
+
+
+.tv{
+    width: 100%;
+    margin-top: 200px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tv-info{
+    width: 50%;
+    padding: 130px 0
+}
+
+.tv-info h2{
+    padding-left: 65px;
+    margin: 15px auto 20px;
+    /* text-align: center; */
+    font-size: 29px;
+    color: rgb(225, 5, 5);
+    text-shadow: 0 0 176px red;
+}
+
+.tv-info p{
+    text-shadow: 0 0 2px rgba(255, 0, 0, 0.541);
+    padding-left: 50px;
+    margin: 10px 5px;
+    color: rgb(255, 238, 238);
+    font-size: 17px;
+}
+
+.tv-button{
+    margin: 15px 76px;
+    padding: 12px 23px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(238, 3, 3);
+    opacity: 0.92;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tv img {
+    width: 330px;
+    height: 230px;
+    margin-right: 40px;
+}
+
+.phone {
+    width: 100%;
+    background-color: #333; 
+    margin-top: 350px;
+    border-radius: 0 0 0 200px;
+}
+
+.watch-phone {
+    display: flex;
+    border-radius: 0 0 0 200px;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 25px;
+}
+
+.phone-info{
+    padding: 30px
+}
+
+.watch-phone h2{
+    color: #fff;
+}
+
+.phone-info p{
+    color: white;
+}   
+
+@media only screen and (max-width: 768px){
+    
+    header {
+        width: 100%;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    .navbar {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to top, #ff0844 0%, #ef5a2c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 32px;
+        padding-left: 24px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+    
+    .navbar ul li{
+        list-style: none;
+    }
+    
+    .navbar ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .navbar ul li a:hover {
+        color: #ef5a2c;
+        transition: 0.3s ease;
+    }
+    
+    .btn-sign-up{
+        padding: 12px 17px;
+        background-color: #ef5a2c;
+        border: 0;
+        border-radius: 6px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .hamburger {
+        padding-right: 24px;
+    }
+    
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        display: none;
+        margin-top: 5px;
+        background-color: #fff;
+    }
+    
+    
+    
+    
+    .tv{
+        width: 100%;
+        margin-top: 200px;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .tv-info{
+        width: 50%;
+        padding: 130px 0
+    }
+    
+    .tv-info h2{
+        padding-left: 65px;
+        margin: 15px auto 20px;
+        /* text-align: center; */
+        font-size: 29px;
+        color: rgb(225, 5, 5);
+        text-shadow: 0 0 176px red;
+    }
+    
+    .tv-info p{
+        text-shadow: 0 0 2px rgba(255, 0, 0, 0.541);
+        padding-left: 50px;
+        margin: 10px 5px;
+        color: rgb(255, 238, 238);
+        font-size: 17px;
+    }
+    
+    .tv img {
+        width: 330px;
+        height: 230px;
+        margin-right: 40px;
+    }
+
+
+
+    .phone {
+        border-radius: 0;
+    }
+    
+    .watch-phone {
+        display: block;
+        margin: 0 50px;
+        border-radius: 0;
+        padding: 0px;
+    }
+    
+    .phone-info{
+        padding: 30px
+    }
+
+    
+    .watch-phone h2{
+        color: #fff;
+    }
+    
+    .phone-info p{
+        color: white;
+    }
+
+
+    .watch-phone{
+        display: flex;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 620px){
+
+    .tv{
+        display: block;
+    }
+    
+    .tv-info{
+        width: 70%;
+        padding: 70px 0;
+        margin: 0 auto
+    }
+    
+    .tv-info h2{
+        padding-left: 0;
+        margin: 15px auto 20px;
+        /* text-align: center; */
+        font-size: 29px;
+        color: rgb(225, 5, 5);
+        text-shadow: 0 0 176px red;
+    }
+    
+    .tv-info p{
+        padding: 0;
+        margin: 20px auto;
+        color: rgb(255, 238, 238);
+        font-size: 17px;
+    }
+    
+    .tv-button{
+        margin: 15px 56px;
+        padding: 12px 23px;
+        border: 0px;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(238, 3, 3);
+        opacity: 0.92;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .tv img {
+        width: 250px;
+        height: 190px;
+        margin: 10px 0 10px 70px;
+        padding: 0
+    }
+
+    .watch-phone{
+        display: block;
+    }
+
+
+    .hamburger .bar{
+        display: block;
+    }
+    
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        background-color: #222;
+        width: 100%
+    }
+    
+    .btn-sign-up{
+        font-size: 20px;
+        padding: 12px 25px;
+        visibility: hidden;
+    }
+    
+    .btn-sign-up.active{
+        color: none;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .menu.active{
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+        font-size: 25px;
+        height: 400px;
+    }
+    
+    .item{
+        margin-top: 25px;
+    }
+    
+    
+} 

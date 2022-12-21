@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(24, 24, 232, 0.879);
+}
+
+.navbar nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.navbar nav h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white; 
+    font-size: 30px;
+    padding: 30px;
+   
+}
+
+.navbar nav ul{
+    padding-right: 20px;
+}
+
+.navbar nav li{
+    list-style-type: none;
+    padding: 4px 0px;
+}
+
+.navbar nav li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 2px;
+}
+
+.navbar nav li a:hover{
+    color:orange;
+    background-color: rgba(105, 105, 250, 0.584);
+    transition: 0.3s;
+}
+
+.company--name{
+    margin: 100px 0px 150px;
+    text-align: center;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(9, 9, 102, 0.898);
+    text-shadow: 0px 0px 12px rgba(48, 48, 222, 0.714);
+    cursor: pointer;
+}
+
+.icon-top{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    background-color: rgba(229, 226, 226, 0.93);
+    float: right;
+    margin-right: 10px;
+    position: sticky;
+    top: 90%;
+}
+
+.icon-top a{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: red
+}
+
+.wrapper{
+    width: 100%;
+    background-color: lightblue;
+}
+
+.first-page{
+    width: 100%;
+}
+
+.first-page h2 {
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: #111;
+    line-height: 44px;
+}
+
+
+#myname{
+        font-size: 29px;
+    }
+
+.first-page p{
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    font-size: 19px;
+}
+
+.img-me{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wrapper2{
+    margin-top: 100px;
+    background-color: rgba(196, 196, 196, 0.152);
+}
+
+.second-page h1{
+    margin: 70px auto;
+    text-align: center;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #222;
+}
+
+.images{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+}
+.images .image{
+    border-radius: 8px;
+    scroll-snap-align: start;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.images .image img:hover{
+    width: 400px;
+    border-radius: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.images .image img{
+    margin-right: 25px;
+    width: 300px;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.images .image p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+    margin-top: 300px;
+    height: 250px;
+    background-color: #111;
+    border-top: 3px solid blue;
+}
+
+.contact-title{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 15px blue;
+    text-align: center;
+}
+
+.contact ul{
+    margin-right: 40px;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    
+}
+
+.contact ul li{
+    list-style-type: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+     h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white; 
+    font-size: 45px;
+    padding: 30px 45px
+    }
+
+    .navbar nav ul{
+        padding-right: 30px;
+    }
+
+    .navbar nav li{
+        list-style-type: none;
+        padding: 5px 0px;
+    }
+
+    .navbar nav li a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .navbar nav li a:hover{
+        color:orange;
+        transition: 0.3s;
+    }
+
+    .company--name{
+        margin: 100px 0px 150px;
+        text-align: center;
+        font-size: 50px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgba(9, 9, 102, 0.898);
+        text-shadow: 0px 0px 12px rgba(48, 48, 222, 0.714);
+        cursor: pointer;
+    }
+
+    .wrapper{
+        width: 100%;
+        display: flex;
+    }
+
+    .first-page{
+        width: 100%;
+    }
+
+    .first-page h2{
+        font-size: 58px;
+    }
+
+    .first-page p{
+        font-size: 20px;
+    }
+    .img-me{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    
+    .contact ul{
+        margin-right: 100px;
+        padding: 20px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+.navbar nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar nav h1 {
+    padding: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    color:white;
+}
+
+.navbar nav ul{
+    padding-right: 100px;
+    margin-right: 20px;
+}
+
+.navbar nav li{
+    display: inline;
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+.navbar nav li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+.navbar nav li a:hover{
+    color:orange;
+    background-color: rgba(105, 105, 250, 0.584);
+    transition: 0.3s;
+}
+
+.images .image img{
+    width: 400px;
+}
+
+.images .image img:hover{
+    width: 600px;
+}
+
+.contact ul{
+    margin-right: 220px;
+    padding: 35px;
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+
+.contact ul li {
+    margin-top: 2px;
+}
+}

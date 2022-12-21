@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sign-up">
+        <h1>Sign Up</h1>
+        <p>
+            If you want to Sign up you should Accept Cookies 
+        </p>
+    </div>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        function Username(){
+            function handleSubmit(event){
+                event.preventDefault()
+                const name = event.target.elements.name.value
+                const password = event.target.elements.password.value
+                alert("Your name is " + name + ", your password is " + password )
+            }
+            return (
+                <div className="main">
+                    <div className="form">
+                        <h1 className="title">Welcome</h1>
+                        <form onSubmit={handleSubmit}>
+                            <div className="input">
+                                <label htmlFor="name">Name: </label>
+                                <input type="text" id="name"/>
+                                <br/>
+                                <label htmlFor="password">Password:</label>
+                                <input type="password" id="password"/>   
+                            </div>
+                            <button id="button" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            )
+        }
+
+        function App(){
+            const [showChild, setShowChild] = React.useState(() => {
+                return false
+            })
+
+            React.useEffect(() =>{
+                return () => {}
+            }, [showChild])
+
+            const element = (
+                <div className="checkbox">
+                <label>
+                    <input type="checkbox"
+                    checked={showChild}
+                    onChange={e => setShowChild(e.target.checked)}/>{' '}
+                    <span className="show">Accept Cookies</span>
+                </label>
+                <div>
+                    {showChild ? <Username/> : null}
+                </div>
+                </div>
+            )
+
+            return element
+        }
+
+        ReactDOM.render(<App/>, document.getElementById('root'))
+    </script>
+
+</body>
+</html>

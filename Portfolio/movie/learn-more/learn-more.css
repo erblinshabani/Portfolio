@@ -1,0 +1,364 @@
+body{
+    background-color: #111;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #111;
+    position: fixed;
+    color:#fff;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1000;
+}
+
+nav h2{
+    margin-left: 50px;
+}
+
+nav ul {
+    margin-right: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+.btn-sign-up{
+    border: 0;
+    border-radius: 15px;
+    background-color: purple;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.info{
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.info h1{
+    color: red;
+    font-size: 36px;
+}
+
+.info-packs{
+    display: flex;
+}
+
+.info-packs .item{
+    width: 250px;
+    height: 300px;
+    padding: 30px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;   
+}
+
+.info-packs .item:hover {
+    background-color: rgba(235, 125, 0, 0.931);
+}
+
+.info-packs .item h2 {
+    font-size: 22px;
+}
+
+.info-packs .item p{
+    font-size: 17px;
+    text-align: start;
+    margin: 7px auto;
+}
+
+.products{
+    margin-top: 300px;
+}
+
+.products .title{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.products-package{
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-evenly;
+}
+
+.products-package h2{
+    color: #fff
+}
+
+.products-package .first-pack{
+    width: 140px;
+    height: 300px;
+    background-color: grey;
+    padding: 60px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+.products-package .first-pack:hover{
+    width: 180px;
+    opacity: 0.9;
+}
+
+.products-package .first-pack p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.885);
+}
+
+.products-package .first-pack .btn-join{
+    padding: 8px 18px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.products-package .second-pack{
+    width: 250px;
+    height: 330px;
+    background-image: linear-gradient(to top, rgba(255, 170, 0, 0.83) 0%, rgb(255, 119, 0) 100%);
+    padding: 60px;
+    margin-top: -20px;
+    border-radius: 25px;
+}
+
+.products-package .second-pack:hover{
+    width: 280px;
+}
+
+.products-package .second-pack h2{
+    margin-top: 0px;
+    font-size: 31px;
+}
+
+.products-package .second-pack h1{
+    color:#fff;
+    font-size: 38px;
+}
+
+.products-package .second-pack p{
+    color: white;
+    font-size: 20px;
+}
+
+.products-package .second-pack .btn-join{
+    margin-top: 20px;
+    padding: 10px 35px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.products-package .third-pack{
+    width: 140px;
+    height: 300px;
+    background-color: grey;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.products-package .third-pack:hover{
+    width: 180px;
+    opacity: 0.9;
+}
+
+.products-package .third-pack{
+    width: 140px;
+    height: 300px;
+    background-color: grey;
+    padding: 60px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.products-package .third-pack p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.885);
+}
+
+.products-package .third-pack .btn-join{
+    padding: 8px 18px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 1200px){
+
+    
+
+    .info-packs{
+        display: block;
+    }
+
+    .products-package .first-pack{
+        width: 140px;
+        height: 300px;
+        background-color: grey;
+        padding: 60px;
+        border-radius: 20px;
+        color: #fff;
+        margin: 0 auto;
+    }
+    
+
+    .products-package .first-pack p{
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.885);
+    }
+
+    .products-package .first-pack .btn-join{
+        padding: 8px 18px;
+        border: 0;
+        border-radius: 8px;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+
+    .products-package .second-pack{
+        width: 250px;
+        height: 330px;
+        background-image: linear-gradient(to top, rgba(255, 170, 0, 0.83) 0%, rgb(255, 119, 0) 100%);
+        padding: 60px;
+        margin-top: -20px;
+        border-radius: 25px;
+        margin: 30px auto;
+    }
+
+    .products-package .second-pack h2{
+        margin-top: 0px;
+        font-size: 31px;
+    }
+
+    .products-package .second-pack h1{
+        color:#fff;
+        font-size: 38px;
+    }
+
+    .products-package .second-pack p{
+        color: white;
+        font-size: 20px;
+    }
+
+    .products-package .second-pack .btn-join{
+        margin-top: 20px;
+        padding: 10px 35px;
+        border: 0;
+        border-radius: 8px;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+
+    .products-package .third-pack{
+        width: 140px;
+        height: 300px;
+        background-color: grey;
+        margin: 30px auto;
+        padding: 60px;
+        border-radius: 20px;
+    }
+
+    .products-package .third-pack{
+        width: 140px;
+        height: 300px;
+        background-color: grey;
+        padding: 60px;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .products-package .third-pack p{
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.885);
+    }
+
+    .products-package .third-pack .btn-join{
+        padding: 8px 18px;
+        border: 0;
+        border-radius: 8px;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+
+       
+
+    }
+
+
+@media only screen and (max-width: 1008px){
+    .products-package{
+        display: block;
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background-color: #111;
+    }
+    
+    nav{
+        width: 100%;
+        display: flex;
+        position: fixed;
+        color:#fff;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    nav h2{
+        margin-left: 50px;
+    }
+    
+    nav ul {
+        margin-right: 30px;
+    }
+    
+    nav ul li{
+        list-style-type: none;
+    }
+    
+    .btn-sign-up{
+        border: 0;
+        border-radius: 15px;
+        background-color: red;
+        padding: 20px 30px;
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    .info{
+        margin-top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        text-align: center;
+        display: block;
+    }
+    
+    .info-packs{
+        display: block;
+    }
+    
+    .info-packs p{
+        margin-left: 30px;
+    }
+}
